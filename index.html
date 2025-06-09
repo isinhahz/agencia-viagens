@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,30 +8,54 @@
     <title>World Tours</title>
 </head>
 <body>
-    <header>
-  
-    <menu class="display: flex">
-        <li>
-            <a href="#home">Home</a>
+    <div class="relative min-h-screen bg-cover bg-center" style="background-image: url(./img/background.png);">
+<!-- fundo cinza aplicado no menu, o "to-b" significa que o gradiante é para baixo -->
+    <header class="absolute top-0 left-0 w-full z-10 bg-gradient-to-b from-[#4A6074] from-[10%] to-[#211F1F00] to-[100%] p-4">
+ <!--mx-auto:margin horinzontal auto(garante que ele fique no meio da tela)-->      
+        <nav class="container mx-auto flex justify-center">
+<!-- flex: itens em linha , justify-center:centraliza na horizontal -->
+        <ul class="hidden sm:flex space-x-8">
+            <li>
+<!-- hover: quando o mouse passa em cima da palavra o texto fica amarelo, border-b-2:borda inferior de 2px, border-transparent: define a borda transparente, pb: padding-bottom-->               
+            <a href="#home" class="text-white hover:text-yellow-400 border-b-2 border-transparent hover:border-yellow-400 pb-1">Home</a>
         </li>
         <li>
-            <a href="#destinations">Destinations</a>
+            <a href="#destinations" class="text-white hover:text-yellow-400 border-b-2 border-transparent hover:border-yellow-400 pb-1">Destinations</a>
         </li>
         <li>
-            <a href="#honeymoon">Honeymoon Deals</a>
+            <a href="#honeymoon" class="text-white hover:text-yellow-400 border-b-2 border-transparent hover:border-yellow-400 pb-1">Honeymoon Deals</a>
         </li>
         <li>
-            <a href="#foreigner">Foreigner Tours</a>
+            <a href="#foreigner" class="text-white hover:text-yellow-400 border-b-2 border-transparent hover:border-yellow-400 pb-1">Foreigner Tours</a>
         </li>
         <li>
-            <a href="#car">Car Rentals</a>
+            <a href="#car" class="text-white hover:text-yellow-400 border-b-2 border-transparent hover:border-yellow-400 pb-1">Car Rentals</a>
         </li>
-    </menu>
-   </header>
-   <main>
-       <div class="relative min-h-screen bg-cover bg-center" style="background-image: url(./img/background.png);"></div>
-       <h2 class="">World Tours</h2>
-   </main>
-   <footer></footer>
+     </ul>
+<!--Menu burguer-->     
+     <button class="sm:hidden text-white text-2xl focus:outline-none">
+        &#9776; </button>
+  </nav>
+</header>
+
+<div class="absolute top-1/2 left-0 -translate-y-1/2 pl-16 text-white max-w-lg z-0">
+<!-- text-[80]: tamanho do texto, font-bold é para deixar em negrito e leading-tight serve para controlar a altura da linha-->
+    <h2 class="text-[80px] font-bold mb-4 leading-tight">World Tours</h2>
+<!-- mb-8: margin-bottom, leading-relaxed: altura da linha--> 
+    <p class="text-[16px] mb-8 leading-relaxed">
+        This text presents my research journey on the topic of Music and Tourism Imaginaries and gives the context which led to the publication of this special issue of Via Tourism Review.
+    </p>
+    <div class="flex justify-end"> <button class="bg-[#FFBC00] from-[90%] text-[16px] text-[#000000] py-3 px-8 rounded hover:bg-yellow-500 transition-colors duration-300">
+        see more
+    </button>
+   </div>
+</div>
+<div class="absolute bottom-8 right-8 flex space-x-4">
+    </div>
+
+</div>
+
+<main></main>
+<footer></footer>
 </body>
 </html>
